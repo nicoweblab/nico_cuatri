@@ -1,0 +1,91 @@
+h2 {color: blue;}
+p{font-family: cursive;
+font-size: small;
+font-weight: bold;}
+.juanito{color: brown;}
+
+body{background-color: antiquewhite;
+text-align: center;
+}
+
+.imagen-motor{
+    width: 60%;
+}
+
+.btn{
+    display:inline-block;          /* le da «cuerpo» de botón */
+    padding:0.75rem 1.6rem;
+    background:#007bff;            /* color base */
+    color:#fff;                    /* texto en blanco */
+    text-decoration:none;          /* quita el subrayado */
+    border-radius:4px;
+    font:600 1rem/1.1 sans-serif;  /* tipo y tamaño de letra */
+    transition:background .25s;
+  }
+  
+  .btn:hover{
+    background:#0056b3;            /* tono más oscuro al pasar el ratón */
+  }
+
+  .cuadrado{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    margin-inline: auto;   /* bloque centrado horizontalmente */
+    background-image: url("https://http2.mlstatic.com/D_NQ_NP_936886-MLA83283908980_042025-O.webp"); /* cámbiala */
+  background-size: cover;      /* cubre todo el área */
+  background-position: center; /* centra la foto */
+  background-repeat: no-repeat;
+  }
+
+  .cuadrado:hover{
+    transform: rotate(45deg);     /* gira 45° al poner el cursor encima */
+  }
+
+  .circulo{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    
+    margin-inline: auto;   /* bloque centrado horizontalmente */
+    background-image: url("https://i.pinimg.com/736x/3a/8f/a8/3a8fa813ad6b119237976e8fafa8c740.jpg"); /* cámbiala */
+    background-size: cover;      /* cubre todo el área */
+    background-position: center; /* centra la foto */
+    background-repeat: no-repeat;
+    
+  
+  }
+
+  .circulo:hover{
+    transform: scale(0.5);
+  }
+
+@keyframes aparecer{
+  from {opacity: 0; transform: translateY(-20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+h1{
+  color: black;
+  transition-property: background-color,color;
+  transition-duration: 0.5s;
+  animation: aparecer 2s ease-in-out;
+}  
+h1:hover{
+  color:red;
+}
+
+button{
+  background-color: orange;
+  color: black;
+  transition-property: background-color,color;
+  transition-duration: 0.5s;
+}
+
+button:hover{
+  background-color: rgb(0, 0, 0);
+  color: orange;
+  
+}
+
+
